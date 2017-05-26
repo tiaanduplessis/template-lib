@@ -1,0 +1,49 @@
+{
+  "name": "template-lib",
+  "version": "1.0.0",
+  "description": "Scaffold a Javascript library",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/template-lib.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/template-lib",
+  "bugs": "https://github.com/tiaanduplessis/template-lib/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "pretest": "npm run lint:fix",
+    "test": "jest --env=node",
+    "test:watch": "npm test -- --watch",
+    "coverage": "npm test -- --coverage",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm run lint"
+  },
+  "keywords": [
+    "sao",
+    "scaffolding",
+    "module",
+    "library",
+    "template-lib"
+  ],
+  "dependencies": {
+    "camelcase": "^4.1.0"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "sao": "^0.19.8",
+    "standard": "^10.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "template"
+    ]
+  }
+}
