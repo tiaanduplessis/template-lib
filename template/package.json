@@ -35,7 +35,7 @@
     "presets": [
       ["env"]
     ]
-  }
+  },
   <%_ } -%>
   "devDependencies": {<% if (unitTest) { %>
     "jest": "^20.0.1",<% } %>
