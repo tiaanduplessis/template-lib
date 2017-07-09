@@ -1,6 +1,6 @@
 {
   "name": "template-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Scaffold a Javascript library",
   "license": "MIT",
   "main": "index.js",
@@ -25,7 +25,13 @@
     "lint:fix": "standard --fix --verbose",
     "precommit": "npm run lint"
   },
-  "keywords": ["sao", "scaffolding", "module", "library", "template-lib"],
+  "keywords": [
+    "sao",
+    "scaffolding",
+    "module",
+    "library",
+    "template-lib"
+  ],
   "dependencies": {
     "camelcase": "^4.1.0"
   },
@@ -36,6 +42,8 @@
     "standard": "^10.0.1"
   },
   "standard": {
-    "ignore": ["template"]
+    "ignore": [
+      "template"
+    ]
   }
 }
