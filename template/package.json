@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/<%= username %>/<%= name %>",
   "bugs": "https://github.com/<%= username %>/<%= name %>",
-  "main": <% if (compile) { %>"dist/<%= name %>.common.js"<% } else { %>"index.js"<% } %>,
+  "main": <% if (compile) { %>"dist/<%= name %>.js"<% } else { %>"index.js"<% } %>,
   <% if (compile) { %>"browser": "dist/<%= name %>.js",
   "jsnext:main": "dist/<%= name %>.es.js", <% } %> <% if (cli) { %>
   "bin": "cli.js", <% } %>
@@ -23,9 +23,9 @@
     "lint:fix": "npm run lint -- --fix",<% if (compile) { %>
     "build": "bili --format es --format umd --compress",<% } %>
     "start": "npm run test",
-    "pretest": "npm run lint:fix",
     "precommit": "npm test",<% if (compile) { %>
     "prepublish": "npm run build",<% } %>
+    "pretest": "npm run lint:fix"
   },
   "author": "<%= username %> <<%= email %>>",
   <%_ if (compile) { -%>
