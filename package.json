@@ -1,6 +1,6 @@
 {
   "name": "template-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scaffold a Javascript library",
   "license": "MIT",
   "main": "index.js",
