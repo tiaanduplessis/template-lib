@@ -19,15 +19,13 @@
   ],
   "scripts": {
     "test": "<% if (unitTest) { %>jest<% } else { %>echo 'nope'<% } %>",
-    "lint": "standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
+    "lint": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
     "lint:fix": "npm run lint -- --fix",<% if (compile) { %>
-    "build": "bili --format cjs --format es --format umd --compress",<% } %>
+    "build": "bili --format es --format umd --compress",<% } %>
     "start": "npm run test",
-    "pretest": "npm run format && npm run lint:fix",
-    "format": "prettier --print-width 100 --semi false --single-quote --write <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
+    "pretest": "npm run lint:fix",
     "precommit": "npm test",<% if (compile) { %>
     "prepublish": "npm run build",<% } %>
-    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push --tags && npm publish"
   },
   "author": "<%= username %> <<%= email %>>",
   <%_ if (compile) { -%>
@@ -38,13 +36,12 @@
   },
   <%_ } -%>
   "devDependencies": {<% if (unitTest) { %>
-    "jest": "^20.0.1",<% } %>
-    "standard": "^10.0.2", <% if (compile) { %>
+    "jest": "^20.0.4",<% } %>
+    "husky": "^0.14.3", <% if (compile) { %>
     <%_ if (unitTest) { -%>
-    "babel-preset-env": "^1.4.0",
+    "babel-preset-env": "^1.6.0",
     <%_ } -%>
-    "bili": "^0.17.2",<% } %>
-    "husky": "^0.14.3",
-    "prettier": "~1.5.2"
+    "bili": "^0.17.3",<% } %>
+    "prettier-standard": "^6.0.0"
   }
 }
