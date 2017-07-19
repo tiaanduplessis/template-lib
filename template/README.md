@@ -5,6 +5,7 @@
 <div align="center">
   <strong><%= description %></strong>
 </div>
+<br>
 <div align="center">
   <a href="https://npmjs.org/package/<%= name %>">
     <img src="https://img.shields.io/npm/v/<%= name %>.svg?style=flat-square" alt="npm package version" />
