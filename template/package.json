@@ -19,13 +19,13 @@
   ],
   "scripts": {
     "test": "<% if (unitTest) { %>jest<% } else { %>echo 'nope'<% } %>",
-    "lint": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
-    "lint:fix": "npm run lint -- --fix",<% if (compile) { %>
+    "format": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
+    "format:fix": "npm run format -- --fix",<% if (compile) { %>
     "build": "bili --format es --format umd --compress",<% } %>
     "start": "npm run test",
     "precommit": "npm test",<% if (compile) { %>
     "prepublish": "npm run build",<% } %>
-    "pretest": "npm run lint:fix"
+    "pretest": "npm run format:fix"
   },
   "author": "<%= username %> <<%= email %>>",
   <%_ if (compile) { -%>
