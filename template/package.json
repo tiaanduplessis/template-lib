@@ -18,7 +18,7 @@
     "cli.js"<% } %>
   ],
   "scripts": {
-    "test": "<% if (unitTest) { %>jest<% } else { %>echo 'nope'<% } %>",
+    "test": "<% if (unitTest) { %>jest<% } else { %>echo 'no tests'<% } %>",
     "format": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
     "format:fix": "npm run format -- --fix",<% if (compile) { %>
     "build": "bili --format es --format umd --compress",<% } %>

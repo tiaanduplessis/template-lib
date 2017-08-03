@@ -50,9 +50,10 @@ module.exports = {
     }
   },
   filters: {
-    'test/**': 'unitTest',
+    'test/**': 'unitTest && compile',
     'src/**': 'compile',
     'index.js': '!compile',
+    'test.js': 'unitTest && !compile',
     'cli.js': 'cli'
   },
   move: {
