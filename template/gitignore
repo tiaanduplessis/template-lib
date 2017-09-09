@@ -1,4 +1,1 @@
 node_modules
-<%_ if (compile) { -%>
-dist/
-<%_ } -%>

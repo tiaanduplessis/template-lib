@@ -5,29 +5,19 @@ const template = {
   fromPath: process.cwd()
 }
 
-test('use defaults', () => {
-  return sao.mockPrompt(template, {}).then(({ fileList }) => {
-    expect(fileList).toEqual([
-      '.editorconfig',
-      '.gitattributes',
-      '.gitignore',
-      '.travis.yml',
-      'LICENSE',
-      'README.md',
-      'index.js',
-      'package.json',
-      'test/index.test.js'
-    ])
-  })
+test('use defaults', async () => {
+  const { fileList } = await sao.mockPrompt(template, { email: 'test@user.com' })
+  expect(fileList).toMatchSnapshot()
 })
 
 test('add unit test', () => {
   return sao
     .mockPrompt(template, {
-      unitTest: true
+      unitTest: true,
+      email: 'test@user.com'
     })
     .then(({ fileList, files }) => {
-      expect(fileList).toContain('test/index.test.js')
+      expect(fileList).toContain('test.js')
 
       const pkg = JSON.parse(files['package.json'].contents.toString())
       expect(pkg.scripts.test).toBe('jest')

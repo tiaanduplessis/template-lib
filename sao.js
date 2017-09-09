@@ -57,6 +57,7 @@ module.exports = {
     'cli.js': 'cli'
   },
   move: {
+    'pkg.json': 'package.json',
     gitignore: '.gitignore',
     'travis.yml': '.travis.yml'
   },

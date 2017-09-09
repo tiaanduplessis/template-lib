@@ -16,17 +16,11 @@
   <a href="https://travis-ci.org/tiaanduplessis/template-lib">
     <img src="https://img.shields.io/travis/tiaanduplessis/template-lib.svg?style=flat-square" alt="Travis Build" />
   </a>
-  <a href="https://github.com/RichardLitt/standard-readme)">
-    <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
-  </a>
   <a href="https://github.com/tiaanduplessis/template-lib/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/template-lib.svg?style=flat-square" alt="License" />
   </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
-  </a>
-  <a href="https://www.paypal.me/tiaanduplessis/1">
-    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
   </a>
 </div>
 <br>

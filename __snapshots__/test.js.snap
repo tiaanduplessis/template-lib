@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`use defaults 1`] = `
+Array [
+  ".editorconfig",
+  ".gitattributes",
+  ".gitignore",
+  ".travis.yml",
+  "LICENSE",
+  "README.md",
+  "index.js",
+  "package.json",
+  "test.js",
+]
+`;
