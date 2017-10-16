@@ -22,6 +22,9 @@
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
   </a>
+	  <a href="https://greenkeeper.io/">
+    <img src="https://badges.greenkeeper.io/tiaanduplessis/template-lib.svg" alt="Greenkeeper" />
+  </a>
 </div>
 <br>
 <div align="center">
@@ -37,7 +40,7 @@
 </div>
 <br>
 <div align="center">
-  Built with ❤︎ by <a href="tiaan.beer">Tiaan</a> and <a href="https://github.com/tiaanduplessis/template-lib/graphs/contributors">contributors</a>
+  Built with ❤︎ by <a href="https://github.com/tiaanduplessis">Tiaan</a> and <a href="https://github.com/tiaanduplessis/template-lib/graphs/contributors">contributors</a>
 </div>
 
 <h2>Table of Contents</h2>
@@ -51,7 +54,6 @@
 
 ## About
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/template-lib.svg)](https://greenkeeper.io/)
 
 Module contains a template for scaffolding out a module using [sao](https://sao.js.org/#/).
 It includes:
