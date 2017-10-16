@@ -51,6 +51,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/template-lib.svg)](https://greenkeeper.io/)
+
 Module contains a template for scaffolding out a module using [sao](https://sao.js.org/#/).
 It includes:
 
