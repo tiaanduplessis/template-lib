@@ -19,13 +19,12 @@
   ],
   "scripts": {
     "test": "<% if (unitTest) { %>jest<% } else { %>echo 'no tests'<% } %>",
-    "format": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",
-    "format:fix": "npm run format -- --fix",<% if (compile) { %>
+    "format": "prettier-standard <% if (compile) { %>'src/**/*.js'<% } else { %>index.js<% } %>",<% if (compile) { %>
     "build": "bili --format es --format umd --compress",<% } %>
     "start": "npm run test",
     "precommit": "npm test",<% if (compile) { %>
     "prepublish": "npm run build",<% } %>
-    "pretest": "npm run format:fix"
+    "pretest": "npm run format"
   },
   "author": "<%= username %> <<%= email %>>",
   <%_ if (compile) { -%>
@@ -36,12 +35,12 @@
   },
   <%_ } -%>
   "devDependencies": {<% if (unitTest) { %>
-    "jest": "^21.0.2",<% } %>
-    "husky": "^0.14.3", <% if (compile) { %>
+    "jest": "~21.2.1",<% } %>
+    "husky": "~0.14.3", <% if (compile) { %>
     <%_ if (unitTest) { -%>
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "~1.6.1",
     <%_ } -%>
-    "bili": "^0.18.1",<% } %>
-    "prettier-standard": "^6.0.0"
+    "bili": "~0.18.1",<% } %>
+    "prettier-standard": "~7.0.3"
   }
 }
