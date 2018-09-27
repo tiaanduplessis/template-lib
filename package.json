@@ -36,7 +36,7 @@
     "camelcase": "^4.1.0"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
+    "husky": "^1.0.1",
     "jest": "^21.2.1",
     "sao": "^0.22.8",
     "standard": "^10.0.3"
