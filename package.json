@@ -33,7 +33,7 @@
     "template-lib"
   ],
   "dependencies": {
-    "camelcase": "^4.1.0"
+    "camelcase": "^5.3.1"
   },
   "devDependencies": {
     "husky": "^0.14.3",
